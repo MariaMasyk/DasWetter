@@ -1,0 +1,166 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-size: calc(1rem * var(--bfso, 1));
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin-top: 50px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.input-container {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 1px solid rgb(122, 74, 210);
+    border-radius: 4px;
+    outline: none;
+    background: #e5daf9;
+    color: #9e9c9c;
+    box-shadow: inset 5px 5px 10px;
+    cursor: pointer;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #e5daf9;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transform: translate(10px);
+    margin-top: 0;
+    box-shadow: inset 5px 5px 10px;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+    padding: -20px;
+}
+
+main,
+header {
+    display: flex;
+    width: 700px;
+    margin: 0 50px;
+}
+
+ul {
+    margin-left: 50px;
+}
+
+button {
+    background-color: rgb(90, 107, 213);
+    color: aliceblue;
+    padding: 15px 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1px solid rgb(59, 72, 156);
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    background-color: #250471;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #000000;
+    align-items: center;
+    background: linear-gradient(to right,
+            rgb(111, 45, 236),
+            rgb(147, 104, 221),
+            white);
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+}
+
+.city-list,
+.link-days {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    width: 200px;
+    background: linear-gradient(to right,
+            rgb(122, 74, 210),
+            rgb(157, 128, 233),
+            white);
+    margin-top: 20px;
+}
+
+.link-days {
+    background: #ffff;
+    box-shadow: 5px 5px 10px rgba(32, 22, 41, 0.3);
+}
+
+.city-list h1 {
+    font-weight: 700;
+}
+
+.city-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.colorDate {
+    color: #000000;
+    font-weight: bold;
+}
+
+.city-list ul li p {
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.link-days ul li a {
+    font-weight: 400;
+    color: #000000;
+
+    transition: all 200ms ease-in-out;
+}
+
+.link-days ul li {
+    margin-bottom: 30px;
+}
+
+.link-days ul li a:hover {
+    color: #250471;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+footer {
+    color: rgb(20, 17, 17);
+    margin: 50px;
+    margin-top: 0;
+}

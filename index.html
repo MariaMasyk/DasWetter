@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100;1,500&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+</head>
+
+<body>
+    <div class="section">
+        <header>
+            <form>
+                <div class="input-container">
+                    <input type="text" placeholder="Enter a city" id="name" />
+                    <button class="btn" id="searchButton" type="submit">
+                        <img src="./images/297822.png" alt="magnifyingGlas" />
+                    </button>
+                </div>
+            </form>
+            <div></div>
+            <button id="curentButton">Curent</button>
+        </header>
+        <main>
+            <div class="container">
+                <div class="city-list">
+                    <h1 id="cityName">Berlin</h1>
+
+                    <ul>
+                        <li class="list">
+                            <p class="colorDate" id="currentDateTime"></p>
+                        </li>
+                        <li>
+                            <p class="list" id="dayOfWeek">Thursday</p>
+                        </li>
+
+                        <li class="list">
+                            <p id="weather">Clear</p>
+                        </li>
+                        <li class="list">
+                            <p id="temperature">16°C/7°C</p>
+                        </li>
+                        <li class="list">
+                            <p id="humidity">Humidity 65%</p>
+                        </li>
+                    </ul>
+                    <emoji>🌤️</emoji>
+                </div>
+
+                <div class="link-days">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">Tue +14°C🌥️</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Wed +13°C🌦️</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Thue +17°C☀️</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Fri +15°C🌥️</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Sat +10°🌧️</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            This page was built by Mariia Masyk
+        </footer>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
